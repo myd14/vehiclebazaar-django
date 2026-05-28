@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}My Listings - Prestige Car Listing{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Site's Ads</h2>
+
+{% if cars %}
+    <div class="row">
+        {% for car in cars %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    {% if car.image and car.image.name %}
+                        <img src="{{ car.image.url }}" class="card-img-top" alt="{{ car.title }}" style="height: 220px; object-fit: cover;">
+                    {% else %}
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="height: 220px;">
+                            <span>No Image Available</span>
+                        </div>
+                    {% endif %}
+
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">{{ car.title }}</h5>
+                            {% if car.is_featured %}
+                                <span class="badge bg-warning text-dark">Featured</span>
+                            {% else %}
+                                <span class="badge bg-info text-dark">User Listing</span>
+                            {% endif %}
+                        </div>
+
+                        <p class="card-text mt-3">
+                            <strong>Brand:</strong> {{ car.brand.name }}<br>
+                            <strong>Model:</strong> {{ car.model }}<br>
+                            <strong>Year:</strong> {{ car.year }}<br>
+                            <strong>Price:</strong> ${{ car.price }}
+                        </p>
+
+                        <a href="{% url 'car_detail' car.pk %}" class="btn btn-dark btn-sm">View</a>
+                        <a href="{% url 'car_update' car.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="{% url 'car_delete' car.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>You have not added any listings yet.</p>
+{% endif %}
+{% endblock %}

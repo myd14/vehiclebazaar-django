@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}VehicleBazaar{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f7fa;
+        }
+
+        .navbar-custom {
+            background-color: #2f3b52;
+        }
+
+        .brand-logo-text {
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .search-box {
+            min-width: 280px;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .card-title-fixed {
+            min-height: 58px;
+            line-height: 1.2;
+        }
+
+        .small-card-title {
+            min-height: 42px;
+            line-height: 1.2;
+        }
+
+        .card {
+            border-radius: 16px;
+        }
+
+        .card img {
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand brand-logo-text" href="{% url 'home' %}">VehicleBazaar</a>
+
+            <form class="d-flex mx-3 flex-grow-1" method="get" action="{% url 'car_list' %}">
+                <input class="form-control me-2 search-box" type="search" name="q" placeholder="Search brand, model, or listing title">
+                <button class="btn btn-light" type="submit">Search</button>
+            </form>
+
+            <div class="d-flex align-items-center gap-2">
+                <a class="btn btn-outline-light btn-sm" href="{% url 'home' %}">Home</a>
+                <a class="btn btn-outline-info btn-sm" href="{% url 'site_ads' %}">Site's Ads</a>
+
+                {% if user.is_authenticated %}
+                    <a class="btn btn-outline-light btn-sm" href="{% url 'dashboard' %}">Dashboard</a>
+                    <span class="text-white">Hello, {{ user.username }}</span>
+                    <a class="btn btn-warning btn-sm" href="{% url 'signout' %}">Logout</a>
+                {% else %}
+                    <a class="btn btn-outline-light btn-sm" href="{% url 'login' %}">Login</a>
+                    <a class="btn btn-warning btn-sm" href="{% url 'register' %}">Register</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 mb-5">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

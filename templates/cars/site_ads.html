@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Site's Ads - VehicleBazaar{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Site's Ads</h2>
+
+{% if cars %}
+    <div class="row">
+        {% for car in cars %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    {% if car.image and car.image.name %}
+                        <img src="{{ car.image.url }}" class="card-img-top" alt="{{ car.title }}" style="height: 220px; object-fit: cover;">
+                    {% else %}
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="height: 220px;">
+                            <span>No Image Available</span>
+                        </div>
+                    {% endif %}
+
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">{{ car.title }}</h5>
+                            <span class="badge bg-info text-dark">User Listing</span>
+                        </div>
+
+                        <p class="card-text mt-3">
+                            <strong>Brand:</strong> {{ car.brand.name }}<br>
+                            <strong>Model:</strong> {{ car.model }}<br>
+                            <strong>Year:</strong> {{ car.year }}<br>
+                            <strong>Price:</strong> ${{ car.price }}<br>
+                            {% if car.owner %}
+                                <strong>Seller:</strong> {{ car.owner.username }}
+                            {% endif %}
+                        </p>
+
+                        <a href="{% url 'car_detail' car.pk %}" class="btn btn-dark btn-sm">View</a>
+
+                        {% if user.is_authenticated %}
+                            {% if user == car.owner or user.is_superuser %}
+                                <a href="{% url 'car_update' car.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                                {% if car.is_active %}
+                                    <a href="{% url 'archive_car' car.pk %}" class="btn btn-secondary btn-sm">Archive</a>
+                                {% else %}
+                                    <a href="{% url 'activate_car' car.pk %}" class="btn btn-success btn-sm">Activate</a>
+                                {% endif %}
+                            {% else %}
+                                <a href="{% url 'send_message' car.pk %}" class="btn btn-primary btn-sm">Message</a>
+                                {% if car.seller_phone %}
+                                    <a href="tel:{{ car.seller_phone }}" class="btn btn-success btn-sm">Call</a>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No user listings have been posted yet.</p>
+{% endif %}
+{% endblock %}

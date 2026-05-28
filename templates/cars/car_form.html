@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ page_title }} - Prestige Car Listing{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">{{ page_title }}</h2>
+
+<form method="post" enctype="multipart/form-data" class="card p-4 shadow-sm">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-dark">Save Car</button>
+</form>
+{% endblock %}

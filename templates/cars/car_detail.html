@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ car.title }} - VehicleBazaar{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm">
+    {% if car.image and car.image.name %}
+        <img src="{{ car.image.url }}" class="card-img-top" alt="{{ car.title }}" style="height: 420px; object-fit: cover;">
+    {% else %}
+        <div class="d-flex align-items-center justify-content-center bg-light" style="height: 420px;">
+            <span>No Image Available</span>
+        </div>
+    {% endif %}
+
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="card-title mb-0">{{ car.title }}</h2>
+            {% if car.is_featured %}
+                <span class="badge bg-warning text-dark">Featured</span>
+            {% else %}
+                <span class="badge bg-info text-dark">User Listing</span>
+            {% endif %}
+        </div>
+
+        <p><strong>Brand:</strong> {{ car.brand.name }}</p>
+        <p><strong>Vehicle Type:</strong> {{ car.vehicle_type }}</p>
+        <p><strong>Model:</strong> {{ car.model }}</p>
+        <p><strong>Year:</strong> {{ car.year }}</p>
+        <p><strong>Price:</strong> ${{ car.price }}</p>
+        <p><strong>Mileage:</strong> {{ car.mileage }} km</p>
+        <p><strong>Fuel Type:</strong> {{ car.fuel_type }}</p>
+        <p><strong>Transmission:</strong> {{ car.transmission }}</p>
+        <p><strong>Color:</strong> {{ car.color }}</p>
+        {% if car.seller_phone %}
+            <p><strong>Phone:</strong> {{ car.seller_phone }}</p>
+        {% endif %}
+        {% if car.owner %}
+            <p><strong>Owner:</strong> {{ car.owner.username }}</p>
+        {% endif %}
+        <p><strong>Description:</strong> {{ car.description }}</p>
+
+        {% if not car.is_featured %}
+            <p><strong>Favorites:</strong> {{ car.favorites_count }}</p>
+        {% endif %}
+
+        <a href="{% url 'site_ads' %}" class="btn btn-secondary">Back</a>
+
+        {% if user.is_authenticated %}
+            {% if user == car.owner or user.is_superuser %}
+                <a href="{% url 'car_update' car.pk %}" class="btn btn-warning">Edit</a>
+                {% if car.is_active %}
+                    <a href="{% url 'archive_car' car.pk %}" class="btn btn-secondary">Archive</a>
+                {% else %}
+                    <a href="{% url 'activate_car' car.pk %}" class="btn btn-success">Activate</a>
+                {% endif %}
+                <a href="{% url 'car_delete' car.pk %}" class="btn btn-danger">Delete</a>
+            {% else %}
+                <a href="{% url 'send_message' car.pk %}" class="btn btn-primary">Message Seller</a>
+                {% if car.seller_phone %}
+                    <a href="tel:{{ car.seller_phone }}" class="btn btn-success">Call Seller</a>
+                {% endif %}
+                <a href="{% url 'toggle_favorite' car.pk %}" class="btn btn-outline-danger">
+                    {% if is_favorited %}Remove Favorite{% else %}Add to Favorites{% endif %}
+                </a>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

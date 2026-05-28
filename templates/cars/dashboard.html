@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - VehicleBazaar{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Dashboard</h2>
+
+<div class="row mb-4">
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm p-3">
+            <h5>Active Ads</h5>
+            <h3>{{ active_ads_count }}</h3>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm p-3">
+            <h5>Past Ads</h5>
+            <h3>{{ past_ads_count }}</h3>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm p-3">
+            <h5>Messages</h5>
+            <h3>{{ messages_count }}</h3>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm p-3">
+            <h5>Favorites</h5>
+            <h3>{{ favorites_count }}</h3>
+        </div>
+    </div>
+</div>
+
+<h3 class="mb-3">My Active Ads</h3>
+{% if active_ads %}
+    <div class="row mb-5">
+        {% for car in active_ads %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    {% if car.image and car.image.name %}
+                        <img src="{{ car.image.url }}" class="card-img-top" alt="{{ car.title }}" style="height: 220px; object-fit: cover;">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5>{{ car.title }}</h5>
+                        <p>
+                            <strong>Brand:</strong> {{ car.brand.name }}<br>
+                            <strong>Price:</strong> ${{ car.price }}<br>
+                            <strong>Favorites:</strong> {{ car.favorites_count }}
+                        </p>
+                        <a href="{% url 'car_detail' car.pk %}" class="btn btn-dark btn-sm">View</a>
+                        <a href="{% url 'car_update' car.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="{% url 'archive_car' car.pk %}" class="btn btn-secondary btn-sm">Archive</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No active ads.</p>
+{% endif %}
+
+<h3 class="mb-3">Messages</h3>
+{% if incoming_messages %}
+    <div class="mb-5">
+        {% for message in incoming_messages %}
+            <div class="card shadow-sm mb-3">
+                <div class="card-body">
+                    <h5>{{ message.subject }}</h5>
+                    <p><strong>From:</strong> {{ message.sender.username }}</p>
+                    <p><strong>Listing:</strong> {{ message.car.title }}</p>
+                    <p>{{ message.content }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No messages yet.</p>
+{% endif %}
+
+<h3 class="mb-3">Favorites</h3>
+{% if favorite_items %}
+    <div class="row mb-5">
+        {% for fav in favorite_items %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    {% if fav.car.image and fav.car.image.name %}
+                        <img src="{{ fav.car.image.url }}" class="card-img-top" alt="{{ fav.car.title }}" style="height: 220px; object-fit: cover;">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5>{{ fav.car.title }}</h5>
+                        <p>
+                            <strong>Brand:</strong> {{ fav.car.brand.name }}<br>
+                            <strong>Price:</strong> ${{ fav.car.price }}
+                        </p>
+                        <a href="{% url 'car_detail' fav.car.pk %}" class="btn btn-dark btn-sm">View</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No favorites yet.</p>
+{% endif %}
+
+<h3 class="mb-3">Past Ads</h3>
+{% if past_ads %}
+    <div class="row">
+        {% for car in past_ads %}
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    {% if car.image and car.image.name %}
+                        <img src="{{ car.image.url }}" class="card-img-top" alt="{{ car.title }}" style="height: 220px; object-fit: cover;">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5>{{ car.title }}</h5>
+                        <p>
+                            <strong>Brand:</strong> {{ car.brand.name }}<br>
+                            <strong>Price:</strong> ${{ car.price }}
+                        </p>
+                        <a href="{% url 'car_detail' car.pk %}" class="btn btn-dark btn-sm">View</a>
+                        <a href="{% url 'activate_car' car.pk %}" class="btn btn-success btn-sm">Activate</a>
+                        <a href="{% url 'car_delete' car.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No past ads.</p>
+{% endif %}
+{% endblock %}

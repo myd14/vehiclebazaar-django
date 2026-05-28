@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Messages - VehicleBazaar{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Messages</h2>
+
+{% if messages %}
+    <div class="row">
+        {% for message in messages %}
+            <div class="col-12 mb-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ message.subject }}</h5>
+                        <p class="mb-1"><strong>From:</strong> {{ message.sender.username }}</p>
+                        <p class="mb-1"><strong>For Listing:</strong> {{ message.car.title }}</p>
+                        <p class="mb-1"><strong>Date:</strong> {{ message.created_at }}</p>
+                        <hr>
+                        <p class="mb-0">{{ message.content }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No messages yet.</p>
+{% endif %}
+{% endblock %}
