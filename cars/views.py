@@ -8,16 +8,29 @@ from .models import Car, Brand, Favorite, Message
 
 
 def home(request):
-    featured_cars = Car.objects.select_related('brand', 'owner').filter(is_featured=True, is_active=True)[:6]
-    suv_cars = Car.objects.select_related('brand', 'owner').filter(vehicle_type='SUV', is_active=True)[:4]
-    sedan_cars = Car.objects.select_related('brand', 'owner').filter(vehicle_type='Sedan', is_active=True)[:4]
+    featured_cars = Car.objects.select_related('brand', 'owner').filter(is_featured=True)[:6]
+    suv_cars = Car.objects.select_related('brand', 'owner').filter(vehicle_type='SUV')[:4]
+    sedan_cars = Car.objects.select_related('brand', 'owner').filter(vehicle_type='Sedan')[:4]
     brands = Brand.objects.all()
+
+    total_cars = Car.objects.count()
+    active_cars = Car.objects.filter(is_active=True).count()
+    archived_cars = Car.objects.filter(is_active=False).count()
+    featured_count = Car.objects.filter(is_featured=True).count()
+    total_messages = Message.objects.count()
+    total_favorites = Favorite.objects.count()
 
     context = {
         'featured_cars': featured_cars,
         'suv_cars': suv_cars,
         'sedan_cars': sedan_cars,
         'brands': brands,
+        'total_cars': total_cars,
+        'active_cars': active_cars,
+        'archived_cars': archived_cars,
+        'featured_count': featured_count,
+        'total_messages': total_messages,
+        'total_favorites': total_favorites,
     }
     return render(request, 'cars/home.html', context)
 

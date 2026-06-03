@@ -58,7 +58,44 @@
         </div>
     </div>
 </div>
-
+<div class="row mb-5">
+    <div class="col-md-2 col-6 mb-3">
+        <div class="card shadow-sm text-center p-3">
+            <h6>Total Cars</h6>
+            <h3>{{ total_cars }}</h3>
+        </div>
+    </div>
+    <div class="col-md-2 col-6 mb-3">
+        <div class="card shadow-sm text-center p-3">
+            <h6>Active</h6>
+            <h3>{{ active_cars }}</h3>
+        </div>
+    </div>
+    <div class="col-md-2 col-6 mb-3">
+        <div class="card shadow-sm text-center p-3">
+            <h6>Archived</h6>
+            <h3>{{ archived_cars }}</h3>
+        </div>
+    </div>
+    <div class="col-md-2 col-6 mb-3">
+        <div class="card shadow-sm text-center p-3">
+            <h6>Featured</h6>
+            <h3>{{ featured_count }}</h3>
+        </div>
+    </div>
+    <div class="col-md-2 col-6 mb-3">
+        <div class="card shadow-sm text-center p-3">
+            <h6>Messages</h6>
+            <h3>{{ total_messages }}</h3>
+        </div>
+    </div>
+    <div class="col-md-2 col-6 mb-3">
+        <div class="card shadow-sm text-center p-3">
+            <h6>Favorites</h6>
+            <h3>{{ total_favorites }}</h3>
+        </div>
+    </div>
+</div>
 <h2 class="section-title">Featured Cars</h2>
 <div class="row mb-5">
     {% for car in featured_cars %}
