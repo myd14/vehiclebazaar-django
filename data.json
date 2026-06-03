@@ -1,0 +1,1179 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-05-24T12:15:08.379Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Audi",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-05-24T12:15:19.657Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "BMV",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-05-24T12:15:28.010Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Mercedes",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-05-24T12:15:54.352Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Mini",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-05-24T12:16:11.053Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Alfa Romeo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-05-24T12:22:28.898Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "BMV 520d (2020)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-05-24T12:23:59.831Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-05-24T12:32:27.225Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-05-24T12:32:53.823Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-05-24T12:33:09.562Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-05-24T12:59:18.233Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-05-24T12:59:18.233Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "BMV 520d (2020)",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-05-24T13:01:55.311Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-05-24T13:09:20.074Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "BMV 520d (2020)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-05-24T13:23:15.572Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "BMw",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-05-24T13:23:20.790Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "BMW",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-05-24T15:04:07.504Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "BMW 520d (2020)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Owner\", \"Is featured\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-05-24T15:04:16.234Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Owner\", \"Is featured\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-05-24T15:21:45.393Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Skoda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-05-24T15:22:01.750Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Volkswagen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-05-24T15:22:17.481Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Kia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-05-24T15:22:26.932Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Toyota",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-05-24T15:22:37.914Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Mazda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-05-24T15:22:54.490Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Ford",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-05-24T15:23:19.778Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "BMW 520d (2020)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-05-24T15:23:24.244Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-05-24T15:31:16.539Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Toyota RAV4 (2022)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-05-24T15:33:50.819Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Kia Sportage (2021)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-05-24T15:35:56.962Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Mazda CX-5 (2020)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-05-24T15:46:33.314Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Ford Kuga (2021)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-05-24T15:53:09.792Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Volkswagen Tiguan (2023)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-05-24T15:55:12.897Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Skoda Kodiaq (2022)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-05-24T15:57:58.332Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Volkswagen Passat (2021)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-05-24T16:05:01.628Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Toyota Corolla (2022)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-05-24T16:11:11.474Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Skoda Superb (2020)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-05-24T16:12:54.709Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Mazda 6 (2021)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-05-24T16:20:08.499Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Ford Mondeo (2019)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-05-24T16:22:35.193Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Kia 2024 (2023)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-05-24T16:22:50.203Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "BMW 520d (2020)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Color\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-05-24T16:23:03.248Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Audi A4 (2021)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Color\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-05-24T17:41:23.594Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "elisa.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2026-05-24T17:43:41.261Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "elisa.",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$5zWDb3A0lqfBzrEbwzKX2L$/UhoOKjFe8G9U74FfS4p3IvUcrNUqMuAfVNKqnDAaSE=",
+    "last_login": "2026-06-02T19:25:03.698Z",
+    "is_superuser": true,
+    "username": "mayda",
+    "first_name": "",
+    "last_name": "",
+    "email": "mustafa@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-05-24T12:12:55.719Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "!8a9GB6HRYPzO5lYs6EPbmKl9IyJNam3FTkZEiZF6",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "elisa.",
+    "first_name": "Elisa",
+    "last_name": "Rodriguez",
+    "email": "elisa@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-24T17:41:23Z",
+    "groups": [],
+    "user_permissions": [
+      9,
+      10,
+      11,
+      12,
+      5,
+      6,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$OFTUdCo0NNYOWCBq7VTIVY$IhOB8wzmIA0U9GddJhqV8M1RcQop49Z2hePuNt7XKCU=",
+    "last_login": "2026-05-28T17:56:18.004Z",
+    "is_superuser": false,
+    "username": "Victor",
+    "first_name": "",
+    "last_name": "",
+    "email": "victor@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-28T16:34:25.218Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$jZPQ2H9OpOm6AbSKGIBlu9$fvdjuM7TXhl5oqEpiis+capyFtPhbSeMkNU51NQ0Luo=",
+    "last_login": "2026-05-28T17:56:04.635Z",
+    "is_superuser": false,
+    "username": "muslera",
+    "first_name": "",
+    "last_name": "",
+    "email": "muslera@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-05-28T17:40:54.076Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bugbn0lr5u5v8myv6juelwba2dzresd1",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlm7_mJKes4Q7dobEkCxFCcV4u4kUgroRvPezFt1tC5DtzaZu7Goi0J1-u2Y8lOmHZQHTfeqc52WeWS9K_qgTd9qkdf1cP8OBmrDtqYMxTowxqMkQnSGEzqbIIDxHLHnAETWB3Dp7DjEPm8pskgvkKNXny-y4jb5:1wUUjX:K_6Oz4c5sSMWDg1LxefgT5QPJa8FgIlqqG3fG1_IQNo",
+    "expire_date": "2026-06-16T19:25:03.706Z"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 1,
+  "fields": {
+    "name": "Audi",
+    "country": "Germany"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 2,
+  "fields": {
+    "name": "BMW",
+    "country": "Germany"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 3,
+  "fields": {
+    "name": "Mercedes",
+    "country": "Germany"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 4,
+  "fields": {
+    "name": "Mini",
+    "country": "United Kingdom"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 5,
+  "fields": {
+    "name": "Alfa Romeo",
+    "country": "Italy"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 6,
+  "fields": {
+    "name": "Skoda",
+    "country": "Czech Republic"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 7,
+  "fields": {
+    "name": "Volkswagen",
+    "country": "Germany"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 8,
+  "fields": {
+    "name": "Kia",
+    "country": "South Korea"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 9,
+  "fields": {
+    "name": "Toyota",
+    "country": "Japan"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 10,
+  "fields": {
+    "name": "Mazda",
+    "country": "Japan"
+  }
+},
+{
+  "model": "cars.brand",
+  "pk": 11,
+  "fields": {
+    "name": "Ford",
+    "country": "United States"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 4,
+  "fields": {
+    "brand": 1,
+    "owner": 1,
+    "title": "Audi A4 S Line",
+    "model": "A4",
+    "vehicle_type": "Sedan",
+    "year": 2021,
+    "price": "39000.00",
+    "mileage": 54000,
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "color": "Dark Blue",
+    "description": "Stylish Audi A4 with low mileage and modern features.",
+    "seller_phone": "",
+    "image": "cars/AudiA42021Gasoline.jpg",
+    "image_url": null,
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T13:01:55.310Z",
+    "updated_at": "2026-05-24T16:23:03.246Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 5,
+  "fields": {
+    "brand": 2,
+    "owner": 1,
+    "title": "BMW 520d M Sport",
+    "model": "520d",
+    "vehicle_type": "Sedan",
+    "year": 2020,
+    "price": "42000.00",
+    "mileage": 78000,
+    "fuel_type": "Diesel",
+    "transmission": "Automatic",
+    "color": "Dark Blue",
+    "description": "Clean and well-maintained BMW 520d with premium package.",
+    "seller_phone": "",
+    "image": "cars/177500533.jpg",
+    "image_url": null,
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T13:09:20.074Z",
+    "updated_at": "2026-05-24T16:22:50.198Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 6,
+  "fields": {
+    "brand": 9,
+    "owner": 1,
+    "title": "Toyota RAV4 Hybrid Adventure",
+    "model": "RAV4",
+    "vehicle_type": "Sedan",
+    "year": 2022,
+    "price": "46500.00",
+    "mileage": 37999,
+    "fuel_type": "Hybrid",
+    "transmission": "Automatic",
+    "color": "White",
+    "description": "Well-maintained Toyota RAV4 Hybrid with advanced safety features, spacious interior, and low fuel consumption. Suitable for both city driving and long-distance travel.",
+    "seller_phone": "",
+    "image": "cars/rav4_2022.png",
+    "image_url": null,
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T15:31:16.537Z",
+    "updated_at": "2026-05-24T15:31:16.537Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 7,
+  "fields": {
+    "brand": 8,
+    "owner": 1,
+    "title": "Kia Sportage Prestige",
+    "model": "Sportage",
+    "vehicle_type": "SUV",
+    "year": 2021,
+    "price": "39800.00",
+    "mileage": 54000,
+    "fuel_type": "Diesel",
+    "transmission": "Automatic",
+    "color": "Gray",
+    "description": "Stylish Kia Sportage with modern design, comfortable cabin, and strong road performance. Ideal for daily use and family trips.",
+    "seller_phone": "",
+    "image": "cars/kia2021.png",
+    "image_url": null,
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T15:33:50.818Z",
+    "updated_at": "2026-05-24T15:33:50.818Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 8,
+  "fields": {
+    "brand": 10,
+    "owner": 1,
+    "title": "Mazda CX-5 Skyactiv",
+    "model": "CX-5",
+    "vehicle_type": "SUV",
+    "year": 2020,
+    "price": "37200.00",
+    "mileage": 69000,
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "color": "Red",
+    "description": "Elegant and sporty Mazda CX-5 with premium interior quality, responsive handling, and reliable engine performance.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_12.png",
+    "image_url": null,
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T15:35:56.960Z",
+    "updated_at": "2026-05-24T15:35:56.960Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 9,
+  "fields": {
+    "brand": 11,
+    "owner": 1,
+    "title": "Ford Kuga Titanium X",
+    "model": "Kuga",
+    "vehicle_type": "SUV",
+    "year": 2021,
+    "price": "38900.00",
+    "mileage": 61000,
+    "fuel_type": "Diesel",
+    "transmission": "Automatic",
+    "color": "Black",
+    "description": "Ford Kuga Titanium X in excellent condition with spacious seating, advanced multimedia system, and strong driving comfort.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_13.png",
+    "image_url": null,
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-05-24T15:46:33.313Z",
+    "updated_at": "2026-05-24T15:46:33.313Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 10,
+  "fields": {
+    "brand": 7,
+    "owner": 1,
+    "title": "Volkswagen Tiguan Life",
+    "model": "Tiguan",
+    "vehicle_type": "SUV",
+    "year": 2023,
+    "price": "51200.00",
+    "mileage": 22000,
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "color": "Silver",
+    "description": "Nearly new Volkswagen Tiguan with refined design, strong engine response, and comfortable driving dynamics.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_14.png",
+    "image_url": null,
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T15:53:09.789Z",
+    "updated_at": "2026-05-24T15:53:09.789Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 11,
+  "fields": {
+    "brand": 6,
+    "owner": 1,
+    "title": "Skoda Kodiaq Style",
+    "model": "Kodiaq",
+    "vehicle_type": "SUV",
+    "year": 2022,
+    "price": "47800.00",
+    "mileage": 34000,
+    "fuel_type": "Diesel",
+    "transmission": "Automatic",
+    "color": "Dark Blue",
+    "description": "Spacious Skoda Kodiaq with practical interior layout, strong road presence, and comfortable long-distance driving performance.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_15.png",
+    "image_url": null,
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-05-24T15:55:12.895Z",
+    "updated_at": "2026-05-24T15:55:12.895Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 12,
+  "fields": {
+    "brand": 7,
+    "owner": 1,
+    "title": "Volkswagen Passat Elegance",
+    "model": "Passat",
+    "vehicle_type": "Sedan",
+    "year": 2021,
+    "price": "43200.00",
+    "mileage": 57000,
+    "fuel_type": "Diesel",
+    "transmission": "Automatic",
+    "color": "Black",
+    "description": "Clean Volkswagen Passat with executive design, comfortable ride quality, and fuel-efficient engine for daily and business use.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_16.png",
+    "image_url": null,
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T15:57:58.310Z",
+    "updated_at": "2026-05-24T15:57:58.310Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 13,
+  "fields": {
+    "brand": 9,
+    "owner": 1,
+    "title": "Toyota Corolla Dream",
+    "model": "Corolla",
+    "vehicle_type": "Sedan",
+    "year": 2022,
+    "price": "31800.00",
+    "mileage": 28000,
+    "fuel_type": "Hybrid",
+    "transmission": "Automatic",
+    "color": "White",
+    "description": "Reliable Toyota Corolla Hybrid with excellent fuel economy, smooth driving experience, and low running costs.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_17.png",
+    "image_url": null,
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-05-24T16:05:01.627Z",
+    "updated_at": "2026-05-24T16:05:01.627Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 14,
+  "fields": {
+    "brand": 6,
+    "owner": 1,
+    "title": "Skoda Superb Premium",
+    "model": "Superb",
+    "vehicle_type": "Sedan",
+    "year": 2020,
+    "price": "40100.00",
+    "mileage": 66000,
+    "fuel_type": "Diesel",
+    "transmission": "Automatic",
+    "color": "Gray",
+    "description": "Large and refined Skoda Superb offering spacious interior, strong comfort, and a premium feel for long-distance journeys.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_18_CGEVzX5.png",
+    "image_url": "https://www.kaclitreyakar.com/wp-content/uploads/2020/07/fc5f9b7f16d5d3760e62882f427eb9c1.jpg",
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T16:11:11.473Z",
+    "updated_at": "2026-06-02T19:32:00.515Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 15,
+  "fields": {
+    "brand": 10,
+    "owner": 1,
+    "title": "Mazda 6 Exclusive",
+    "model": "6",
+    "vehicle_type": "Sedan",
+    "year": 2021,
+    "price": "35600.00",
+    "mileage": 47000,
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "color": "Red",
+    "description": "Mazda 6 with sporty design, responsive engine, and elegant cabin layout. A strong option for drivers who want style and comfort together.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_19.png",
+    "image_url": null,
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-05-24T16:12:54.707Z",
+    "updated_at": "2026-05-24T16:12:54.707Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 16,
+  "fields": {
+    "brand": 11,
+    "owner": 1,
+    "title": "Ford Mondeo Titanium",
+    "model": "Mondeo",
+    "vehicle_type": "Sedan",
+    "year": 2019,
+    "price": "29500.00",
+    "mileage": 83000,
+    "fuel_type": "Diesel",
+    "transmission": "Automatic",
+    "color": "Blue",
+    "description": "Practical Ford Mondeo with balanced comfort, strong highway performance, and a spacious cabin for family or business use.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_20.png",
+    "image_url": null,
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-05-24T16:20:08.498Z",
+    "updated_at": "2026-05-24T16:20:08.498Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 17,
+  "fields": {
+    "brand": 8,
+    "owner": 1,
+    "title": "Kia K5 GT-Line",
+    "model": "2024",
+    "vehicle_type": "Sedan",
+    "year": 2023,
+    "price": "44800.00",
+    "mileage": 18000,
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "color": "White",
+    "description": "Modern Kia K5 GT-Line with dynamic appearance, updated technology package, and sporty driving feel.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_21.png",
+    "image_url": null,
+    "is_featured": true,
+    "is_active": true,
+    "created_at": "2026-05-24T16:22:35.177Z",
+    "updated_at": "2026-05-24T16:22:35.177Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 18,
+  "fields": {
+    "brand": 8,
+    "owner": 3,
+    "title": "Kia Sportage Prestige",
+    "model": "Sportage",
+    "vehicle_type": "SUV",
+    "year": 2021,
+    "price": "39800.00",
+    "mileage": 54000,
+    "fuel_type": "Diesel",
+    "transmission": "Automatic",
+    "color": "Gray",
+    "description": "Clean Kia Sportage in very good condition. Comfortable interior, modern design, automatic transmission, and strong fuel efficiency. Suitable for both city driving and family use.",
+    "seller_phone": "",
+    "image": "cars/Screenshot_28.png",
+    "image_url": null,
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-05-28T16:39:05.457Z",
+    "updated_at": "2026-05-28T16:39:05.457Z"
+  }
+},
+{
+  "model": "cars.car",
+  "pk": 19,
+  "fields": {
+    "brand": 2,
+    "owner": 4,
+    "title": "BMW 218i Gran Coupe M Sport",
+    "model": "218i",
+    "vehicle_type": "Sedan",
+    "year": 2021,
+    "price": "36500.00",
+    "mileage": 52000,
+    "fuel_type": "Gasoline",
+    "transmission": "Automatic",
+    "color": "White",
+    "description": "BMW 218i Gran Coupe M Sport in good condition. The vehicle has automatic transmission, gasoline engine, and a clean interior. It has been regularly maintained and has no major issues. Comfortable for city use and long drives.",
+    "seller_phone": "05551234567",
+    "image": "cars/Screenshot_33.png",
+    "image_url": null,
+    "is_featured": false,
+    "is_active": true,
+    "created_at": "2026-05-28T17:45:21.578Z",
+    "updated_at": "2026-05-28T17:48:16.787Z"
+  }
+},
+{
+  "model": "cars.message",
+  "pk": 1,
+  "fields": {
+    "sender": 3,
+    "receiver": 1,
+    "car": 17,
+    "subject": "I'm interested in your advertisement.",
+    "content": "What's wrong with the car? What's the final price?",
+    "created_at": "2026-05-28T17:51:12.508Z"
+  }
+},
+{
+  "model": "cars.favorite",
+  "pk": 1,
+  "fields": {
+    "user": 3,
+    "car": 17,
+    "created_at": "2026-05-28T17:31:38.227Z"
+  }
+},
+{
+  "model": "cars.favorite",
+  "pk": 2,
+  "fields": {
+    "user": 4,
+    "car": 17,
+    "created_at": "2026-05-28T17:52:14.543Z"
+  }
+}
+]
