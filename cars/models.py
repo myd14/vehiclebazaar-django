@@ -42,6 +42,7 @@ class Car(models.Model):
     description = models.TextField()
     seller_phone = models.CharField(max_length=20, blank=True)
     image = models.ImageField(upload_to='cars/', blank=True, null=True)
+    image_url = models.URLField(blank=True, null=True)
     is_featured = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)

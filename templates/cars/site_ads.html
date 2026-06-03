@@ -10,7 +10,9 @@
         {% for car in cars %}
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
-                    {% if car.image and car.image.name %}
+                    {% if car.image_url %}
+                        <img src="{{ car.image_url }}" class="card-img-top" alt="{{ car.title }}" style="height: 220px; object-fit: cover;">
+                    {% elif car.image and car.image.name %}
                         <img src="{{ car.image.url }}" class="card-img-top" alt="{{ car.title }}" style="height: 220px; object-fit: cover;">
                     {% else %}
                         <div class="d-flex align-items-center justify-content-center bg-light" style="height: 220px;">

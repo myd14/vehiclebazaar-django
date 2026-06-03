@@ -21,6 +21,7 @@ class CarForm(forms.ModelForm):
             'seller_phone',
             'description',
             'image',
+            'image_url',
         ]
 
 
